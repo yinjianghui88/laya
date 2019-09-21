@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!--关键字-->
+        <meta name="keywords" content="html,css,基础"/>
+        <!--描述-->
+        <meta name="description" content="网站的描述内容"/>
+        <!--视口-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+        <title>页面标题</title>
+        <link rel="stylesheet" href="" />
+        <style rel="stylesheet">
+            /*页面平滑滚动*/
+            body,html{scroll-behavior: smooth;}
+        </style>
+    </head>
+    <body>
+        <a name="top">锚点</a>
+        <!--段落标签 p
+            属性      值
+            align     left、right、center
+        -->
+        <p align="left">这是一个段落</p>
+        <!--标题标签 h1~h6
+            属性      值
+            align     left、center、right
+        -->
+        <h1 align="center">标题标签1</h1>
+        <h2>标题标签2</h2>
+        <h3>标题标签3</h3>
+        <h4>标题标签4</h4>
+        <h5>标题标签5</h5>
+        <h6>标题标签6</h6>
+
+        <!--文本格式化-->
+        <b>定义粗体文本</b> <br />
+        <strong>强调</strong> <br />
+        <i>定义斜体文本</i> <br />
+        <em>着重</em> <br />
+        X<sup>2</sup> <br />
+        H<sub>2</sub>O  <br />
+        <s>删除线</s> <del>删除线</del> <br />
+        <u>下划线</u> <br />
+        <!--text-decoration: none | underline | overline | line-through;-->
+
+        <!--链接 a
+            属性     说明           值
+            href     跳转地址       url
+            target   页面打开方式    _self、_blank、_parent、_top
+            title    提示信息
+        -->
+        <a href="http://www.runoob.com" target="_blank" title="IT技术学习">菜鸟教程</a><br />
+        <!--内嵌框架-->
+        <iframe src="demo1.html" frameborder="1" width="800px" height="300px"></iframe><br />
+        <!--邮件-->
+        <a href="mailto:2832288348@qq.com">给xxx发邮件</a>
+        <pre>
+
+
+
+
+
+
+
+
+
+
+        </pre>
+        <!--锚点-->
+        <a href="#top">Top</a><br />
+        <!--图片 img
+            属性      说明              值
+            src      图片地址           url
+            alt      替代信息
+            width    宽度
+            height   高度
+            align    排列图片           top、middle、bottom
+        -->
+        <img src="./images/1.jpg" alt="风景图1" width="600" align="middle"/>
+        这是一段测试文字 <br />
+        <img src="../11.jpg" alt="" width="600" /> <br/>
+
+        <!--音频标签
+            属性          说明      值
+            src          音频地址
+            controls     控件
+            muted        静音
+            loop         循环播放
+            autoplay     自动播放
+            preload      预加载    preload
+        -->
+        <audio src="./resource/bg.mp3" controls  autoplay></audio>
+        <audio controls>
+            <source src="resource/finish.ogg" type="audio/ogg"/>
+            <source src="resource/bg.mp3" type="audio/mpeg"/>
+            您的浏览器不支持音频标签
+        </audio>
+        <br />
+        <!--视频标签
+            属性          说明      值
+            controls      控件
+            muted        静音
+            loop         循环播放
+            autoplay     自动播放
+            preload      预加载    preload
+            src          视频地址
+            width        宽度
+            height       高度
+            poster       视频封面   图片url
+        -->
+        <video src="./resource/Mesto-Leyla.mp4" controls muted width="400"></video>
+        <video controls autoplay poster="images/2.jpg">
+            <source src="resource/movie.ogg" type="video/ogg"/>
+            <source src="resource/Mesto-Leyla.mp4" type="video/mp4"/>
+            您的浏览器不支持视频标签
+        </video>
+        <br />
+
+        <!--实体字符
+            >   &gt;
+            <   &lt;
+            "   &quot;
+            ®  &reg;
+            ©  &copy;
+            &   &amp;
+        -->
+        &lt;h1&gt;实体字符&lt;/h1&gt;
+        &amp;copy;
+        <!--font标签已经被弃用-->
+        <font color="red" size="7">&hearts;</font>
+
+        <!--无序列表 ul
+            属性      说明          值
+            type      符号类型      disc、circle、square
+        -->
+        <ul type="square">
+            <li>列表项1</li>
+            <li>列表项2</li>
+            <li>列表项3</li>
+            <li>列表项4</li>
+        </ul>
+        <!--有序列表 ol
+            属性      说明              值
+            type      符号类型          1、a、A、i、I
+            start     表示从第几个开始   数字
+        -->
+        <ol type="a" start="4">
+            <li>列表项1</li>
+            <li>列表项2</li>
+            <li>列表项3</li>
+            <li>列表项4</li>
+        </ol>
+        <!--定义列表-->
+        <dl>
+            <dt>HTML</dt>
+            <dd>超文本标记语言</dd>
+            <dd>HyperText Markup Language</dd>
+
+            <dt>CSS</dt>
+            <dd>层叠样式表</dd>
+        </dl>
+
+        <!--表格
+            表格由 <table> 标签以及一个或多个 tr、th或td 元素组成。
+            单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等
+            属性      说明                      值
+            border    边框
+            width     宽度
+            height    高度
+            align     对齐方式（表格和内容）      left、center、right
+            cellspacing 单元格的间距             px
+            cellpadding 边框和内容之间的空白      px
+            valign    垂直排列方式               top、middle、bottom
+            colspan    合并列单元格
+            rowspan    合并行单元格
+        -->
+        <table border="1" width="400" align="center" cellspacing="0" cellpadding="8">
+            <!--行 tr -->
+            <tr>
+                <!--表头 th 是特殊的单元格 文本加粗且居中-->
+                <th>内容1</th>
+                <th>内容2</th>
+                <th>内容3</th>
+                <th>内容4</th>
+                <th>内容5</th>
+            </tr>
+            <tr>
+                <!--单元格 td -->
+                <td align="center">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr align="center">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table><br />
+        <!-- table[border=1,width=400,height=100]>tr*3>td{内容$}*4 -->
+        <table border="1" width="400" height="160">
+            <tr>
+                <td align="right" valign="top">内容1</td>
+                <td>内容2</td>
+                <td>内容3</td>
+                <td>内容4</td>
+            </tr>
+            <tr align="center" valign="top">
+                <td>内容1</td>
+                <td>内容2</td>
+                <td>内容3</td>
+                <td>内容4</td>
+            </tr>
+            <tr>
+                <td>内容1</td>
+                <td>内容2</td>
+                <td>内容3</td>
+                <td>内容4</td>
+            </tr>
+        </table><br />
+
+        <table border="1" width="400" height="120">
+            <tr>
+                <td colspan="2" bgcolor="#7fffd4"></td>
+                <!--<td></td>-->
+                <td></td>
+                <td colspan="2" bgcolor="orange"></td>
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3" bgcolor="red"></td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <td rowspan="3" bgcolor="#0f0"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" bgcolor="yellow"></td>
+                <td></td>
+                <td colspan="2" rowspan="2" bgcolor="teal"></td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <!--<td></td>-->
+                <td></td>
+                <!--<td colspan="2"></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+</body>
+</html>
