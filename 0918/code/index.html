@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta name="keywords" content="关键字1,关键字2"/>
+        <meta name="description" content="网站描述"/>
+        <title>html-02</title>
+    </head>
+    <body bgcolor="#faebd7">
+    <!--text="#f00" 文字颜色 写在body标签内 h5已经弃用-->
+        <div>测试的文字</div>
+        <div style="color:#1288ff">颜色测试</div>
+        <div style="color:#0ff">颜色测试</div>
+        <div style="color:skyblue">颜色测试</div>
+        <div style="color:rgb(255,0,255)">颜色测试</div>
+
+        <!--内嵌框架 iframe
+            属性          说明          值
+            width         宽
+            height        高
+            scrolling     滚动条       yes、no、auto
+            frameborder   是否显示边框  1、0
+            src           url
+        -->
+        <iframe width="1000" height="550" src="map.html" scrolling="no"></iframe><br />
+        <!--表单 form
+            属性		说明
+            name		表单的名称
+            action		表单提交地址
+            method		表单数据提交的方式 （get默认 ,post）
+            enctype		MIME类型 enctype 属性规定在发送到服务器之前应该如何对表单数据进行编码
+                        默认:text/plain  上传文件:multipart/form-data
+            target		打开方式    _self、_blank、_parent、_top
+        -->
+        <form name="form1" action="http://www.baidu.com/s?" method="get" enctype="text/plain" target="_blank">
+            <input type="text" name="word" placeholder="百度一下"/>
+            <input type="submit" value="搜索" />
+        </form><br />
+        <!--
+            属性		说明
+            type		input元素类型
+            name		input 元素的名称
+            value		input 元素的值
+            size		input 元素的宽度
+            readonly	是否只读
+            maxlength	输入字符的最大长度
+            minlength   输入字符的最小长度
+            disabled	是否禁用
+            required    必填
+            placeholder 占位符
+            pattern     正则
+        -->
+        <form action="" name="form2" method="">
+            <input type="text" name="wd" value="test" size="100" readonly disabled/> <br />
+            <input type="text" name="user" placeholder="请输入用户名" required maxlength="8" minlength="4"/><br />
+
+            <input type="submit" value="提交" />
+        </form><br /><br />
+
+        <form action="" name="form3" method="post" enctype="multipart/form-data">
+            <!--文本框 text-->
+            用户名：
+            <input type="text" name="user" placeholder="请输入用户名" required/><br />
+            <!--密码框 password -->
+            密&emsp;码：
+            <input type="password" name="psword" placeholder="请输入密码" required/> <br />
+            <!--单选按钮 radio， 一个选项的单选按钮 name 值必须一致
+                checked默认选中
+                label标签将内容和表单元素结合起来
+            -->
+            性&emsp;别：
+            <input type="radio" name="gender" value="0" id="man" checked/>
+            <label for="man">男</label>
+            <input type="radio" name="gender" value="1" id="woman"/>
+            <label for="woman">女</label> <br />
+
+            <!--复选框 checkbox checked默认选中-->
+            爱&emsp;好：
+            <input type="checkbox" name="hobby[]" value="sing" id="sing" checked/>
+            <label for="sing">唱歌</label>
+            <input type="checkbox" name="hobby[]" value="dance" id="dance" />
+            <label for="dance">跳舞</label>
+            <input type="checkbox" name="hobby[]" value="hiking" id="hiking" />
+            <label for="hiking">远足</label>
+            <!--隐藏域hidden 用于在程序发送没有必要让用户看到特定值的时候使用-->
+            <input type="hidden" name="id" value="123">
+            <br />
+            <!--文件 file
+                利用这项功能时，在 form 标签中要指定method属性。
+                要把method 指定为post, enctype属性指定为 multipart/form-data
+            -->
+            头&emsp;像：
+            <input type="file" name="photo" /><br />
+
+            <!--多行文本域 textarea
+                属性		说明
+                name		元素的名称
+                rows		指定文本框的高度
+                cols		指定文本框的宽度
+            -->
+            简&emsp;介：
+            <textarea name="" cols="50" rows="10" placeholder="请输入简介" ></textarea><br />
+            <!--下拉选项框 select option  selected 默认选中 -->
+            城&emsp;市：
+            <select name="city">
+                <option value="gz">广州</option>
+                <option value="shenzhen" selected>深圳</option>
+                <option value="zhuhai">珠海</option>
+            </select>
+
+            <!--
+                属性		说明
+                label		指定组合选项名称
+            -->
+            <select name="city1">
+                <optgroup label="广东">
+                    <option value="gz">广州</option>
+                    <option value="shenzhen" selected>深圳</option>
+                    <option value="zhuhai">珠海</option>
+                </optgroup>
+                <optgroup label="湖南">
+                    <option value="changsha">长沙</option>
+                    <option value="shaoyang">邵阳</option>
+                    <option value="yongzhou">永州</option>
+                </optgroup>
+            </select>
+
+            <br />
+            <!--按钮-->
+            <input type="submit" value="提交"/>
+            <input type="button" value="确定" onclick="alert('你好！');"/>
+            <input type="reset" value="重置" />
+            <!--图片按钮 和submit等效-->
+            <input type="image" src="images/3.jpg" width="100"/>
+        </form>
+
+        <input type="date" name="date">
+
+        <pre>
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+    </body>
+</html>
