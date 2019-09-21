@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--伪类选择符-->
+    <a href="http://www.baidu.com/" id="a-one">百度</a><br />
+    <input type="text" class="input-1"/><br />
+    <!--E:not(s)-->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <br />
+    <div class="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+    <!--E:only-child 匹配父元素仅有的一个子元素-->
+    <div class="box5">
+        <p>2.5</p>
+    </div>
+    <!--水平线 -->
+    <hr color="red" width="1000px" size="1" align="left"/>
+    <div class="box6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+    <hr color="blue" width="100%" size="2" align="center"/>
+
+    <div class="box7">
+        <p>这是一个段落1</p>
+        <div class="con1">内容1</div>
+        <p>这是一个段落2</p>
+        <div class="con1">内容1</div>
+        <p>这是一个段落3</p>
+    </div>
+    <hr />
+
+    <input type="radio" name="sex" value="1" id="woman"/>
+    <label for="woman">女</label>
+    <input type="radio" name="sex" value="0" id="man"/>
+    <label for="man">男</label>
+</body>
+</html>

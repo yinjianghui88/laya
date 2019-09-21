@@ -1,0 +1,111 @@
+/*伪类选择符
+  E:link  设置超链接a在未被访问前的样式
+  E:visited	设置超链接a在其链接地址已被访问过时的样式
+  E:active 设置元素在被用户激活
+(在鼠标点击与释放之间发生的事件)时的样式
+
+  E:hover 设置元素在鼠标悬停时的样式
+*/
+#a-one:active{
+    color: red;
+}
+#a-one:hover{
+    color: lime;
+    text-decoration: overline;
+    /*underline overline none line-through*/
+}
+/*E:focus 元素获得焦点时的状态*/
+.input-1:focus{
+    outline: none;
+    background-color: #ccc;
+}
+/*E:not(s) 匹配不含有s选择符的元素E*/
+.box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid #f00;
+}
+.box:not(.box2){
+    background-color: #2C8DFB;
+}
+.box4{
+    border: 1px solid #00f;
+}
+/*E:first-child 匹配父元素的第一个子元素E*/
+.box4 div:first-child{
+    color: red;
+    width: 200px;
+    height: 30px;
+    background-color:#cecece;
+}
+/*E:last-child 匹配父元素的最后一个子元素E*/
+.box4 div:last-child{
+    color: #f0f;
+    width: 360px;
+    height: 30px;
+    background-color: #8dbde2;
+    font-size: 20px; /*字体大小*/
+}
+/*E:nth-child(n) 匹配父元素的第n个子元素E*/
+.box4 div:nth-child(2){
+    color: #50f06f;
+    width: 280px;
+    height: 30px;
+    background-color: deeppink;
+}
+/*E:nth-last-child(n) 匹配父元素的倒数第n个子元素E*/
+.box4 div:nth-last-child(3){
+    color: yellow;
+    width: 310px;
+    height: 30px;
+    background-color: #4A00E0;
+}
+/*E:only-child 匹配父元素仅有的一个子元素*/
+.box5 p:only-child{
+    font-size: 22px;
+    font-weight: bold; /*文本加粗*/
+    color: orangered;
+    width: 250px;
+    height: 26px;
+    background-color: greenyellow;
+}
+.box6{
+    border: 1px dotted #f0f;
+}
+/*偶数 2n even */
+.box6 div:nth-child(even){
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: aqua;
+}
+/*奇数 2n-1 odd */
+.box6 div:nth-child(2n-1){
+    width: 310px;
+    height: 30px;
+    color: purple;
+    background-color: #dedede;
+}
+.box7{
+    border: 1px dashed #f00;
+}
+/*E:first-of-type 匹配同类型中的第一个同级兄弟元素E*/
+.box7 .con1:first-of-type{
+    width: 340px;
+    height: 40px;
+    background-color: #db2c8f;
+}
+/*E:last-of-type 匹配同类型中的最后一个同级兄弟元素E*/
+.box7 .con1:last-of-type{
+    width: 350px;
+    height: 40px;
+    background-color: #2fa8ec;
+}
+/*E:checked
+匹配用户界面上处于选中状态的元素E
+(用于input type为radio与checkbox时)*/
+input[name="sex"]:checked + label{
+    color: #db2c8f;
+    font-weight: bold;
+    /* 文本加粗 normal bold bolder */
+}

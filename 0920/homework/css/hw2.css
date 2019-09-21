@@ -1,0 +1,6 @@
+.content{
+	color: blue;
+}
+.content:last-child{
+	color: red;!important
+}

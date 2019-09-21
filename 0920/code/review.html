@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul type="square">
+        <li>
+            <ol type="a" start="27">
+                <li>内容1</li>
+                <li>内容2</li>
+                <li>内容3</li>
+            </ol>
+        </li>
+        <li>
+            <dl>
+                <dt>HTML</dt>
+                <dd>超文本标记语言</dd>
+            </dl>
+        </li>
+    </ul>
+
+    <table border="1" width="400" height="120" cellpadding="0" cellspacing="0">
+        <!--表格标题 caption
+            align   left\right\center（火狐）   top bottom
+        -->
+        <caption align="bottom">表格标题</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br /><br />
+    <!--图像热区(映射)-->
+    <img src="./images/solar.jpg" usemap="#solar" alt="">
+    <map name="solar">
+        <!--圆形热区 circle 圆心坐标+半径长度 确定圆形热区-->
+        <area shape="circle" coords="239,157,16" href="./images/5.jpg" alt="" target="_blank" />
+        <!--矩形热区 rect 对角线顶点坐标确定-->
+        <area shape="rect" coords="332,100,402,169" href="./images/7.jpg" alt="" target="_blank"/>
+        <!--多边形热区 poly 依次写出各个顶点坐标-->
+        <area shape="poly" coords="392,66,473,65,527,120,441,120" href="./images/6.jpg" alt="" target="_blank" />
+    </map>
+
+
+    <div class="father">
+        <div class="son1">
+            <a href="#">son1</a>
+            <div class="grandson">
+                <a href="#">grandson</a>
+            </div>
+        </div>
+        <div class="son2">son2</div>
+        <div class="son3">son3</div>
+    </div>
+
+</body>
+</html>
